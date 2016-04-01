@@ -13,11 +13,14 @@ import java.util.Date;
 public class Item {
     private String title;
     private Date date;
+    private int id;
+
 
     public Item(String title, Date date){
         super();
         this.title = title;
         this.date = date;
+        id = 0;
     }
 
     public String getTitle(){
@@ -28,6 +31,8 @@ public class Item {
         return date;
     }
 
+    public int getId() { return id; }
+
     public void setTitle(String title){
         this.title = title;
     }
@@ -36,9 +41,15 @@ public class Item {
         this.date = date;
     }
 
+    public void setId(int id) { this.id = id; }
+
     public String convertDateToString(Date date){
         DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
         return df.format(date);
+    }
+
+    public String toString(){
+        return "title = " + title + " , " + "due = " + date;
     }
 
 }

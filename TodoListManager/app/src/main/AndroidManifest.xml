@@ -22,5 +22,4 @@
         <activity android:name = ".AddNewTodoItemActivity"
             android:theme="@android:style/Theme.Dialog"/>
     </application>
-
 </manifest>

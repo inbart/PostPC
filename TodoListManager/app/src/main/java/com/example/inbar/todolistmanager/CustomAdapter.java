@@ -72,7 +72,6 @@ public class CustomAdapter extends ArrayAdapter<Item> {
         calendar.set(Calendar.MILLISECOND, 0);
 
         res = calendar.getTime();
-
         return res;
     }
 
